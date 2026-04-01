@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Thi Cam Tu | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">T<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 1.5rem;">
+                <div class="theme-toggle" id="theme-toggle"
+                    style="cursor: pointer; font-size: 1.3rem; color: var(--accent-primary); transition: var(--transition);"
+                    title="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Tran Thi Cam Tu</h1>
+                    <h2 class="title type-wrap"><span class="typing">AI Engineer </span><span class="cursor">|</span>
+                    </h2>
+                    <p class="summary">
+                        Passionate about applying Computer Science and Artificial Intelligence to solve complex
+                        biological problems. Always eager to learn and bring value to the community.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in delay-1">
+                    <div class="img-wrapper">
+                        <!-- Using existing profile picture -->
+                        <img src="image3.png" alt="Tran Thi Cam Tu">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-content glass-card fade-in">
+                    <div class="about-text">
+                        <p>I am currently a third-year Computer Science student at the University of Information
+                            Technology (UIT). With strong ambition, I am pursuing my interests in Machine Learning, Deep
+                            Learning, and emerging technologies.</p>
+                        <!-- <p>I am seeking a <strong>Bioinformatician Trainee</strong> position at BioTuring to apply my
+                            expertise in model optimization and end-to-end pipeline development to solve high-impact,
+                            real-world technical challenges in biological data analysis and discovery.</p> -->
+                        <p>I am always eager to learn new things from the people I meet throughout my career journey!
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>UIT</h3>
+                            <p>Computer Science</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Focus</h3>
+                            <p>Bioinformatics & AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Technical Skills</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages & Frameworks -->
+                    <div class="skill-category glass-card fade-in">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming & Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">TensorFlow / Keras</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">NumPy & Pandas</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category glass-card fade-in delay-1">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fab fa-linux"></i> Linux</span>
+                            <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="tag">CUDA</span>
+                            <span class="tag">Google Colab</span>
+                            <span class="tag">Vast.ai</span>
+                        </div>
+                    </div>
+
+                    <!-- Domain Knowledge -->
+                    <div class="skill-category glass-card fade-in delay-2">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Domain Knowledge</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Medical Imaging (NIfTI, DICOM)</span>
+                            <span class="tag">nnUNet / MONAI</span>
+                            <span class="tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Selected Projects</h2>
+                    <div class="underline"></div>
+                    <p class="subtitle">A showcase of my recent academic and personal work.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: ISBI -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-microscope project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>ISBI 2026: RIVA Cervical Cytology Challenge (Track A)</h3>
+                            <p class="project-desc">Ranked <strong>8/66</strong> in Preliminary Phase. Developed an
+                                ensemble Object Detection pipeline for detecting pre-cancerous cells in Pap smears.
+                                Optimized mAP@0.50:0.95 and implemented a robust WBF strategy to fuse multi-model
+                                predictions.</p>
+                            <div class="project-tech">
+                                <span>YOLO</span>
+                                <span>Swin Transformers</span>
+                                <span>Faster R-CNN</span>
+                                <span>WBF & TTA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/TuTTC/RIVA-TRACK-A" target="_blank" class="github-link"><i
+                                        class="fab fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: LegalSLM -->
+                    <div class="project-card glass-card fade-in delay-1">
+                        <div class="project-img">
+                            <i class="fas fa-balance-scale project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>DoRA vs. PiSSA for Vietnamese Legal SLM</h3>
+                            <p class="project-desc">Engineered an end-to-end PEFT pipeline for Legal Small Language
+                                Models. Built an automated LLM-as-a-Judge framework to benchmark legal syllogisms.
+                                PiSSA-tuned model achieved 2.88/5.0 in logical structure and relevance.</p>
+                            <div class="project-tech">
+                                <span>Unsloth</span>
+                                <span>LoRA/DoRA/PiSSA</span>
+                                <span>Qwen3-32B</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/TuTTC/CS431-DoRA-vs-PiSSA-LegalSLM" target="_blank"
+                                    class="github-link"><i class="fab fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: HCMAI -->
+                    <div class="project-card glass-card fade-in delay-2">
+                        <div class="project-img">
+                            <i class="fas fa-network-wired project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>HCMAI Challenge 2025 - LLandMark: Multi-Agent Framework</h3>
+                            <p class="project-desc">Finalist of AI Challenge HCMC. Contributed to ACR module by
+                                generating video-to-text descriptions and building agentic RAG pipelines. Findings
+                                Accepted by AAAI 2026 Workshop on New Frontiers in IR.</p>
+                            <div class="project-tech">
+                                <span>Whisper & Gemini</span>
+                                <span>LlamaIndex</span>
+                                <span>Multi-agent</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/chisphung/AIOOIA__HCMAIChallenge_2025" target="_blank"
+                                    class="github-link"><i class="fab fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Thesis -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-brain project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Undergraduate Thesis: Multi-Class Brain Hemorrhage Segmentation</h3>
+                            <p class="project-desc">Developing a segmentation framework for 3D multi-class brain
+                                hemorrhage. Reproducing and optimizing SOTA architectures (One-Shot Learning,
+                                Adversarial Training) using DSC and HD95 metrics.</p>
+                            <div class="project-tech">
+                                <span>PyTorch</span>
+                                <span>MONAI</span>
+                                <span>nnUNet</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="github-link"
+                                    style="color: var(--text-secondary); cursor: not-allowed; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-family: var(--font-heading);"><i
+                                        class="fas fa-lock"></i> Internal Repository</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: ABSA -->
+                    <div class="project-card glass-card fade-in delay-1">
+                        <div class="project-img">
+                            <i class="fas fa-comment-dots project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Aspect-based Sentiment Analysis for Education Reviews</h3>
+                            <p class="project-desc">Engineered an end-to-end ABSA pipeline for academic feedback.
+                                Integrated the FTS-OBP metric for comparison between generative (T5) and discriminative
+                                models, achieving a peak F1-score of 58.2%.</p>
+                            <div class="project-tech">
+                                <span>BiLSTM</span>
+                                <span>BERT</span>
+                                <span>T5</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/TuTTC/CS221.Q11-NATURAL-LANGUAGE-PROCESSING" target="_blank"
+                                    class="github-link"><i class="fab fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Jewelry Store Management -->
+                    <div class="project-card glass-card fade-in delay-2">
+                        <div class="project-img">
+                            <i class="fas fa-gem project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jewelry Store Management Software (Web App)</h3>
+                            <p class="project-desc">Developed a comprehensive management application featuring inventory
+                                control, sales (Orders), purchasing (Purchase Orders), processing/repair services, and
+                                revenue reporting. Designed a Role-Based Access Control (RBAC) system for users,
+                                customers, and suppliers to optimize operational workflows. Deployed using Docker &
+                                Docker Compose for efficient environment management and deployment.</p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Python (Flask)</span>
+                                <span>MySQL</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/TuTTC/SE104-Jewelry-Store-Management-Software"
+                                    target="_blank" class="github-link"><i class="fab fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-projects fade-in">
+                    <a href="https://github.com/TuTTC" target="_blank" class="btn btn-outline">View All on GitHub <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="publications section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Publications</h2>
+                    <div class="underline"></div>
+
+                </div>
+                <div class="publication-card glass-card fade-in">
+                    <div class="pub-info">
+                        <h3>LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video
+                            Retrieval</h3>
+                        <p class="authors">Minh-Chi Phung, Thien-Bao Le, <strong>Cam-Tu Tran-Thi</strong>, Thu-Dieu
+                            Nguyen-Thi, Vu-Hung Dao</p>
+                        <p class="venue"><em>arXiv preprint arXiv:2603.02888</em>, 2026</p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2603.02888" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-file-pdf"></i> arXiv Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Education & Certifications</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="timeline glass-card fade-in">
+                    <!-- Edu 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Aug 2023 - Jan 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.Sc. in Computer Science</h3>
+                            <h4>University of Information Technology (UIT), VNU-HCM</h4>
+                            <p><strong>GPA:</strong> 3.48/4.0</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Certification</div>
+                        <div class="timeline-content">
+                            <h3>All-in-one AI Vietnam Course</h3>
+                            <h4>AIO</h4>
+                            <p>Completed Modules 1–9 covering comprehensive AI fundamentals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Awards -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Awards / Extracurriculars</div>
+                        <div class="timeline-content">
+                            <h3>Activities & Honors</h3>
+
+                            <p>
+                                - Finalist: AI Challenge Ho Chi Minh City 2025<br>
+                                - "Thanh nien tien tien lam theo loi Bac" Merit<br>
+                                - "Excellent Volunteer Award" - Green Summer Volunteer Campaign <br>
+                                - 890 TOEIC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Get In Touch</h2>
+                    <div class="underline"></div>
+                    <p class="subtitle">I'm currently looking for new opportunities in Bioinformatics and AI Research.
+                    </p>
+                </div>
+
+                <div class="contact-wrapper glass-card fade-in">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Me</h3>
+                                <a href="mailto:camtutran2608@gmail.com">camtutran2608@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Connect on LinkedIn</h3>
+                                <a href="https://byvn.net/yRce" target="_blank">linkedin.com/in/tutrcam</a>
+                                <!-- User needs to update this link -->
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub Profile</h3>
+                                <a href="https://github.com/TuTTC" target="_blank">github.com/TuTTC</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h2>Let's build something beautiful together.</h2>
+                        <p>Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <a href="mailto:23521704@gm.uit.edu.vn" class="btn btn-primary">Say Hello</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="https://github.com/TuTTC" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://byvn.net/yRce" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:23521704@gm.uit.edu.vn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Tran Thi Cam Tu. Designed & Built with <i class="fas fa-heart" style="color:#e25555"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
